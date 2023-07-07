@@ -1,4 +1,5 @@
 sr.txt
+isr.txt
 data/*
 !data/.gitkeep
 

@@ -24,9 +24,6 @@ Make sure that your current working directory is `soft-reserve-helper`, then run
 ./soft-reserve-helper.sh
 ```
 
-This will generate a clean list of SRs in a file called `sr.txt` (located in the same directory). From there, you can copy+paste it to the Discord thread (this also conveniently negates the need to lock the thread). Make sure to copy the entire file's contents, including the "```" at the beginning and end, so that Discord will recognize it as a code block and preserve spacing.
+This will generate a clean list of SRs in a file called `sr.txt` (located in the same directory). A file with item names first is also generated (`isr.txt`). 
 
-You can search SRs with the following command - just replace `term` with your search term. This is case-insensitive.
-```sh
-grep -i 'term' sr.txt
-```
+From here, you can copy+paste either file to the Discord thread (this also conveniently negates the need to lock the thread). Make sure to copy the entire file's contents, including the "```" at the beginning and end, so that Discord will recognize it as a code block and preserve spacing.

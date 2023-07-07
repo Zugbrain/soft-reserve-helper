@@ -6,16 +6,23 @@ grep -v -E '[nN][aA][mM][eE] - [iI][tT][eE][mM]'    |\
 grep '-' > data/messages.txt
 
 # get player names
-cut -d '-' -f 1 data/messages.txt > data/players.txt
+cut -d '-' -f 1 data/messages.txt                   |\
+sed 's/./\u&/' > data/players.txt
 
 # get item names
 cut -d '-' -f 1 --complement data/messages.txt      |\
-sed -e 's/^[ \t]*//' > data/items.txt
+sed -e 's/^[ \t]*//' | sed 's/./\u&/' > data/items.txt
 
 # create SR sheet
 paste -d "#" data/players.txt data/items.txt        |\
 column -t -s '#' | sort -f                          |\
-sed 's/./\u&/' | sed '1s/^/```\n/' > sr.txt
+sed '1s/^/```\n/' > sr.txt
 
-# append ``` to sr.txt so discord interprets it as code
+# create SR sheet - items first
+paste -d "#" data/items.txt data/players.txt        |\
+column -t -s '#' | sort -f                          |\
+sed '1s/^/```\n/' > isr.txt
+
+# append ``` to sr.txt & isr.txt so discord interprets it as code
 echo '```' >> sr.txt
+echo '```' >> isr.txt
