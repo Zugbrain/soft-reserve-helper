@@ -2,7 +2,7 @@
 This script makes it easier to search soft reserve (SR) messages posted in Discord.
 
 #### Note to Raid Leaders:
-This script will only work properly if players' SR messages are formatted `name - item` on a single line. Case and spacing are not important, but the single hyphen is. Messages that don't conform to this pattern are excluded. 
+This script will only work properly if players' SR messages are formatted `name - item` on a single line. Case and spacing are not important, but the single hyphen is. Messages that don't conform to this pattern are excluded. Encourage players to type the full item name rather than abbreviations (e.g. `onslaught girdle` instead of `osg`).
 
 ## Instructions
 Start by cloning or downloading this repository. 

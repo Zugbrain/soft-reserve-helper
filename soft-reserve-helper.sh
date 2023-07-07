@@ -18,5 +18,4 @@ column -t -s '#' | sort -f                          |\
 sed 's/./\u&/' | sed '1s/^/```\n/' > sr.txt
 
 # append ``` to sr.txt so discord interprets it as code
-ticks='```'
-echo $ticks >> sr.txt
+echo '```' >> sr.txt
