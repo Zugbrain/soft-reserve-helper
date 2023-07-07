@@ -24,6 +24,6 @@ paste -d "#" data/items.txt data/players.txt                    |\
 column -t -s '#' | sort -f                                      |\
 sed '1s/^/```\n/' > isr.txt
 
-# append ``` to sr.txt & isr.txt so discord interprets it as code
+# append ``` to sr files so discord interprets them as code
 echo '```' >> sr.txt
 echo '```' >> isr.txt
