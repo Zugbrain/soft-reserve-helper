@@ -17,7 +17,7 @@ If you're on Windows, you'll need additional software. Here are a couple options
     - Pros: Nice GUI, customizable, powerful
     - Cons: Not as easy to install
 
-When you're ready to run the script, copy+paste the contents of the Discord SR thread into `discord-thread.txt` and save it. Make sure that you only copy the messages and their titles. `CTRL` + `A` doesn't work - click and drag to select. 
+When you're ready to run the script, copy+paste the contents of the Discord SR thread (default view - compressed mode doesn't work (yet)) into `discord-thread.txt` and save it. Make sure that you only copy the messages and their titles. `CTRL` + `A` doesn't work - click and drag to select. 
 
 Make sure that your current working directory is `soft-reserve-helper`, then run:
 ```sh
